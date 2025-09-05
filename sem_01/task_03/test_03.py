@@ -1,5 +1,5 @@
 import pytest
-from solution import (
+from .solution import (
     string_length,
     string_concatenation,
     string_to_uppercase,

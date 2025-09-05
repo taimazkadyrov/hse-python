@@ -1,5 +1,5 @@
 import pytest
-from solution import (
+from .solution import (
     create_person,
     get_value,
     update_dict,

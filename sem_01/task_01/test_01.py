@@ -1,5 +1,5 @@
 import pytest
-from solution import get_variables
+from .solution import get_variables
 
 
 def test_variables():

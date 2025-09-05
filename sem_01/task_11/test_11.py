@@ -1,6 +1,6 @@
 import pytest
 import math
-from solution import (
+from .solution import (
     create_point,
     get_coordinates,
     calculate_distance,

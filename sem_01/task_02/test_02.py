@@ -1,5 +1,5 @@
 import pytest
-from solution import add, subtract, multiply, divide, power, modulo, floor_division
+from .solution import add, subtract, multiply, divide, power, modulo, floor_division
 
 
 def test_add():

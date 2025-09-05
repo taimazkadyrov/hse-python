@@ -1,7 +1,7 @@
 import pytest
 import os
 import tempfile
-from solution import (
+from .solution import (
     write_to_file,
     append_to_file,
     write_lines_to_file,

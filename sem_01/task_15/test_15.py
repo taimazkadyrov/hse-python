@@ -2,7 +2,7 @@ import pytest
 import os
 import json
 import tempfile
-from solution import Student, StudentRegistry
+from .solution import Student, StudentRegistry
 
 
 @pytest.fixture
