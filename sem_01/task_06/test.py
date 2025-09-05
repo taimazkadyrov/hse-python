@@ -1,5 +1,5 @@
 import pytest
-from .solution import (
+from solution import (
     sum_of_digits,
     count_digits,
     reverse_number,

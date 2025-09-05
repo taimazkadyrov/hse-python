@@ -1,5 +1,5 @@
 import pytest
-from .solution import (
+from solution import (
     is_positive,
     is_even,
     is_in_range,

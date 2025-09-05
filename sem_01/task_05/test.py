@@ -1,5 +1,5 @@
 import pytest
-from .solution import (
+from solution import (
     sum_of_numbers,
     factorial,
     count_vowels,

@@ -1,6 +1,6 @@
 import pytest
 import math
-from .solution import (
+from solution import (
     greet,
     absolute_value,
     calculate_area,

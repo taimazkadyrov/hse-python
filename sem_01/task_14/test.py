@@ -2,7 +2,7 @@ import pytest
 import json
 import os
 import tempfile
-from .solution import (
+from solution import (
     safe_divide,
     safe_list_get,
     safe_dict_get,

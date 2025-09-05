@@ -1,6 +1,6 @@
 import pytest
 import os
-from .solution import (
+from solution import (
     read_file_content,
     count_lines,
     count_words,

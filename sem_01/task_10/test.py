@@ -1,5 +1,5 @@
 import pytest
-from .solution import (
+from solution import (
     create_set_from_list,
     is_subset,
     union_sets,

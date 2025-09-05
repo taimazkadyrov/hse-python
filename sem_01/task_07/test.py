@@ -1,5 +1,5 @@
 import pytest
-from .solution import (
+from solution import (
     create_list,
     find_element_index,
     remove_duplicates,
