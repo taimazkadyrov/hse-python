@@ -27,3 +27,13 @@ jobs:
         run: |
           chmod +x run_tests.sh
           ./run_tests.sh
+
+      - name: Run individual tests
+        run: |
+          # Запускаем тесты из каждой директории отдельно
+          for task_dir in sem_01/task_*/; do
+            echo "Running tests in $task_dir"
+            cd "$task_dir"
+            python -m pytest test.py -v || echo "Test failed in $task_dir"
+            cd ../../..
+          done
