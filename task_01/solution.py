@@ -25,4 +25,12 @@ def get_variables():
     dictionary = {"name": "age"}
 
     # Вернуть все переменные в виде кортежа
-    return (integer_number, float_number, string_value, boolean_true, boolean_false, list_of_numbers, dictionary)
+    return (
+        integer_number,
+        float_number,
+        string_value,
+        boolean_true,
+        boolean_false,
+        list_of_numbers,
+        dictionary,
+    )
