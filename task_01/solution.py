@@ -3,6 +3,7 @@
 
 
 def get_variables():
+    print(">>> get_variables вызвана из solution.py")
     # Целое число
     integer_number = 23
 
