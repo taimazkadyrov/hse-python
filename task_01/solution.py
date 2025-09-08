@@ -22,7 +22,7 @@ def get_variables():
     list_of_numbers = [i for i in range(1, 6)]
 
     # Словарь с ключами 'name' и 'age', и соответствующими значениями
-    dictionary = {"name": "age"}
+    dictionary = {"name": "Taimaz", "age": "18"}
 
     # Вернуть все переменные в виде кортежа
     return (
