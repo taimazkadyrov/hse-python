@@ -4,7 +4,7 @@
 
 def get_variables():
     # Целое число
-    integer_number = 2
+    integer_number = 23
 
     # Число с плавающей точкой
     float_number = 2.1
