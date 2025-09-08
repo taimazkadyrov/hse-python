@@ -19,7 +19,7 @@ def get_variables():
     boolean_false = False
 
     # Список из чисел от 1 до 5
-    list_of_numbers = [i for i in range(1, 6)]
+    list_of_numbers = [1, 2, 3, 4, 5]
 
     # Словарь с ключами 'name' и 'age', и соответствующими значениями
     dictionary = {"name": "Taimaz", "age": "18"}
