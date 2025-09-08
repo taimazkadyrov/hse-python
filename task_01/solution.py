@@ -10,7 +10,7 @@ def get_variables():
     float_number = 2.1
 
     # Строка
-    string_value = "2"
+    string_value = "Okak"
 
     # Логическое значение (истина)
     boolean_true = True
