@@ -6,56 +6,50 @@ def string_length(s):
     """
     Возвращает длину строки
     """
-    # Ваш код здесь
-    pass
+    return len(s)
 
 
 def string_concatenation(s1, s2):
     """
     Соединяет две строки
     """
-    # Ваш код здесь
-    pass
+    return s1 + s2
 
 
 def string_to_uppercase(s):
     """
     Преобразует строку к верхнему регистру
     """
-    # Ваш код здесь
-    pass
+    return s.upper()
 
 
 def string_to_lowercase(s):
     """
     Преобразует строку к нижнему регистру
     """
-    # Ваш код здесь
-    pass
+    return s.lower()
 
 
 def string_replace(s, old, new):
     """
     Заменяет в строке s все вхождения подстроки old на new
     """
-    # Ваш код здесь
-    pass
+    return s.replace(old, new)
 
 
 def string_split(s, delimiter):
     """
     Разбивает строку по указанному разделителю
     """
-    # Ваш код здесь
-    pass
-
+    if not delimiter:
+        return list(s)
+    return s.split(delimiter)
 
 def string_strip(s):
     """
     Удаляет начальные и конечные пробелы из строки
     """
-    # Ваш код здесь
-    pass
+    return s.strip()
 
 
 def is_palindrome(s):
@@ -64,5 +58,5 @@ def is_palindrome(s):
     (читается одинаково слева направо и справа налево)
     Регистр и пробелы не учитываются
     """
-    # Ваш код здесь
-    pass
+    la = s.replace(" ", "").lower()
+    return la == la[::-1]
