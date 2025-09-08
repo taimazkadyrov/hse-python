@@ -3,27 +3,26 @@
 
 
 def get_variables():
-    print(">>> get_variables вызвана из solution.py")
     # Целое число
-    integer_number = 23
+    integer_number = None
 
     # Число с плавающей точкой
-    float_number = 2.1
+    float_number = None
 
     # Строка
-    string_value = "Okak"
+    string_value = None
 
     # Логическое значение (истина)
-    boolean_true = True
+    boolean_true = None
 
     # Логическое значение (ложь)
-    boolean_false = False
+    boolean_false = None
 
     # Список из чисел от 1 до 5
-    list_of_numbers = [1, 2, 3, 4, 5]
+    list_of_numbers = None
 
     # Словарь с ключами 'name' и 'age', и соответствующими значениями
-    dictionary = {"name": "Taimaz", "age": "18"}
+    dictionary = None
 
     # Вернуть все переменные в виде кортежа
     return (
@@ -35,3 +34,4 @@ def get_variables():
         list_of_numbers,
         dictionary,
     )
+
