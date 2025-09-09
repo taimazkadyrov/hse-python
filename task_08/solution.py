@@ -7,16 +7,16 @@ def greet(name):
     Возвращает приветствие для имени
     Например, "Привет, Иван!"
     """
-    # Ваш код здесь
-    pass
+    return f"Привет, {name}!"
 
 
 def absolute_value(number):
     """
     Возвращает абсолютное значение числа
     """
-    # Ваш код здесь
-    pass
+    if number < 0:
+        return -number
+    return number
 
 
 def calculate_area(shape, *args):
@@ -33,8 +33,15 @@ def calculate_area(shape, *args):
     Возвращает:
     - площадь фигуры или None, если тип фигуры неизвестен
     """
-    # Ваш код здесь
-    pass
+    import math
+    if shape == "circle":
+        return math.pi * args[0] * args[0]
+    elif shape == "rectangle":
+        return args[0] * args[1]
+    elif shape == "triangle":
+        return 0.5 * args[0] * args[1]
+    else:
+        return None
 
 
 def apply_operation(operation, a, b):
@@ -48,8 +55,18 @@ def apply_operation(operation, a, b):
     Возвращает:
     - результат операции или None, если операция неизвестна
     """
-    # Ваш код здесь
-    pass
+    if operation == "add":
+        return a + b
+    elif operation == "subtract":
+        return a - b
+    elif operation == "multiply":
+        return a * b
+    elif operation == "divide":
+        if b == 0:
+            return None
+        return a / b
+    else:
+        return None
 
 
 def create_multiplier(factor):
@@ -60,8 +77,11 @@ def create_multiplier(factor):
     double = create_multiplier(2)
     result = double(5)  # result = 10
     """
-    # Ваш код здесь
-    pass
+
+    def bla(x):
+        return x * factor
+
+    return bla
 
 
 def apply_to_each(func, items):
@@ -72,5 +92,7 @@ def apply_to_each(func, items):
     Пример использования:
     result = apply_to_each(lambda x: x*2, [1, 2, 3])  # result = [2, 4, 6]
     """
-    # Ваш код здесь
-    pass
+    lok = list()
+    for item in items:
+        lok.append(func(item))
+    return lok
