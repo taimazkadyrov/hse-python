@@ -7,8 +7,7 @@ def create_person(name, age, city):
     Создает и возвращает словарь, представляющий человека
     с ключами 'name', 'age', 'city'
     """
-    # Ваш код здесь
-    pass
+    return {"name": name, "age": age, "city": city}
 
 
 def get_value(dictionary, key, default=None):
@@ -16,8 +15,10 @@ def get_value(dictionary, key, default=None):
     Возвращает значение из словаря по ключу
     Если ключ отсутствует, возвращает default
     """
-    # Ваш код здесь
-    pass
+    if key not in dictionary:
+        return default
+    else:
+        return dictionary[key]
 
 
 def update_dict(dictionary, key, value):
@@ -25,8 +26,8 @@ def update_dict(dictionary, key, value):
     Обновляет словарь, добавляя или изменяя пару ключ-значение
     Возвращает обновленный словарь
     """
-    # Ваш код здесь
-    pass
+    dictionary[key] = value
+    return dictionary
 
 
 def merge_dicts(dict1, dict2):
@@ -34,17 +35,16 @@ def merge_dicts(dict1, dict2):
     Объединяет два словаря в один новый
     Если ключи повторяются, значения из dict2 имеют приоритет
     """
-    # Ваш код здесь
-    pass
-
+    dict3 = dict1.copy()
+    dict3.update(dict2)
+    return dict3
 
 def invert_dict(dictionary):
     """
     Создает новый словарь, где ключи и значения поменяны местами
     Предполагается, что значения в исходном словаре уникальны
     """
-    # Ваш код здесь
-    pass
+    return {value: key for key, value in dictionary.items()}
 
 
 def count_words(text):
@@ -53,8 +53,15 @@ def count_words(text):
     Возвращает словарь, где ключи - слова, значения - количество вхождений
     Слова приводятся к нижнему регистру и очищаются от знаков препинания
     """
-    # Ваш код здесь
-    pass
+    for znaki in ",.1!?:;":
+        text = text.replace(znaki, "")
+    lst = text.lower().split()
+    dic = {}
+    for item in lst:
+        dic[item] = dic.get(item, 0) + 1
+    return dic
+
+
 
 
 def filter_by_value(dictionary, condition):
@@ -66,5 +73,8 @@ def filter_by_value(dictionary, condition):
     filter_by_value({'a': 1, 'b': 2, 'c': 3}, lambda x: x > 1)
     Вернет: {'b': 2, 'c': 3}
     """
-    # Ваш код здесь
-    pass
+    dict1 = {}
+    for key, value in dictionary.items():
+        if condition(value):
+            dict1[key] = value
+    return dict1
